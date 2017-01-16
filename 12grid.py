@@ -10,8 +10,8 @@ class Myform(QWidget):
         self.initUI()
 
     def initUI(self):
-        grid = QGridLayout()
-        self.setLayout(grid)
+        grid = QGridLayout()   # 创建网格布局
+        self.setLayout(grid)    # 将网格布局添加到窗口中
 
         btns = ['存储', '取存', '退格', '清屏',
                 '累存', '积存', '清存', '/',
@@ -27,7 +27,7 @@ class Myform(QWidget):
             if btn == '':
                 pass
             btn = QPushButton(btn)
-            grid.addWidget(btn, position)
+            grid.addWidget(btn, *position)
 
 
 
