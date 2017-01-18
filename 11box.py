@@ -21,8 +21,8 @@ class Myform(QWidget):
 
         # 创建一个垂直布局
         vbox = QVBoxLayout()
-        vbox.addLayout(hbox)
         vbox.addStretch(1)
+        vbox.addLayout(hbox)
 
         # 将水平布局放到垂直布局里
         self.setLayout(vbox)
